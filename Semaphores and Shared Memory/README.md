@@ -58,7 +58,7 @@ end.
 ## Output
 The C++ version of the files are on c++11. The output will print to the console. 
 
-The output from my computer follow:
+The output for EDF.cpp follows:
 ```
 Jerry waits on AA197 1B successfully at time 2, deadline met.
 Tom reserves SA113 2A successfully at time 5, deadline met.
