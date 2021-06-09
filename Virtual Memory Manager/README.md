@@ -47,6 +47,7 @@ Note each processor has an id (101, 102, 103) followed by the page address reque
 ## Output
 The output is printted to the console after completion. 
 
+The output for WS.cpp follows:
 ```
 Number of page faults for each process:
 Process 101: 2;
