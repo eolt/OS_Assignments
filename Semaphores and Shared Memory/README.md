@@ -8,8 +8,11 @@ An agent cannot reserve a seat that is already taken. And cannot operate on a no
 
 There is an option to 'wait' for a selected seat if this seat is currently unavailable. If the seat later becomes available as a result of a ‘cancel’ transaction by another passenger, then this seat will be sold to the passenger.
 
-The ‘waitany’ transaction is like ‘wait’ except that at the end of the execution of the agent executing this transaction, if no one cancels the requested seat, then the airline reservation system assigns another available seat.
+The ‘waitany’ transaction is like ‘wait’ except that at the end if no one cancels the requested seat, then the airline reservation system assigns another available seat.
 
 ## Implementation
+Each C++ file treats an agent as a process and uses process scheduling methods to order the execution of transactions; Earliest Deadline First, First Come First Serve, and Least Laxity First.
+
+
 
 
