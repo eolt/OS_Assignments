@@ -22,7 +22,7 @@ And shared memory is implemented to allow communication amongst all the agents (
 ## Input
 The program inputs one text file which lists the number of flights, the seats, and number of agents followed by their transactions with deadlines. 
 
-The input is as follows:
+The input text is as follows:
 ```
 4
 SA113 6 10
