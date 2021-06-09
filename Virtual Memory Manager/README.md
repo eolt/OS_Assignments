@@ -11,7 +11,7 @@ The program uses data structures such as queue and arrays to simulate a disk dri
 
 ## Input 
 
-The input file will list the total number of page frames, maximum number of pages, page size (in number of bytes), numbr of page frames per processs, and total number of processes.
+The input file will list the total number of page frames, maximum number of pages, page size (in number of bytes), numbr of page frames per processs, lookahead x, min free pool size, max free pool size, and total number of processes.
 
 input.txt follows
 ```
