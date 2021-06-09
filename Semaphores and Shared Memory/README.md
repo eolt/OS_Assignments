@@ -55,7 +55,7 @@ cancel SA113 2A Tom deadline 15
 end.
 ```
 
-# Output
+## Output
 The C++ version of the files are on c++11. The output will print to the console. 
 
 The output from my computer follow:
