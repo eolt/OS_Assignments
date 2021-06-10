@@ -11,7 +11,7 @@ There is an option to 'wait' for a selected seat if this seat is currently unava
 The ‘waitany’ transaction is like ‘wait’ except that at the end if no one cancels the requested seat, then the airline reservation system assigns another available seat.
 
 ## Implementation
-Each C++ file treats each agent as a process. The fork() method is an accessible way to creat and run multiple processes on the program. 
+Each C++ file treats each agent as a process. The fork() method is an accessible way to create and run multiple processes on the program. 
 
 An agent's commands/transacrion will be scheduled with methods such as: Earliest Deadline First, First Come First Serve, and Least Laxity First.
 
