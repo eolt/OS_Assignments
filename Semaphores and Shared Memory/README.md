@@ -13,11 +13,11 @@ The ‘waitany’ transaction is like ‘wait’ except that at the end if no on
 ## Implementation
 Each C++ file treats each agent as a process. The fork() method is an accessible way to create and run multiple processes on the program. 
 
-An agent's commands/transacrion will be scheduled with methods such as: Earliest Deadline First, First Come First Serve, and Least Laxity First.
+An agent's commands are scheduled with methods such as: Earliest Deadline First, First Come First Serve, and Least Laxity First.
 
-The program uses semaphores make transactions atomic. If two agent (processes) are issuing the same transactions. The semaphore will let one execute first and the other waits, then allowing the second after the first agent is done. 
+The program uses semaphores to make transactions atomic. If two agent (processes) are issuing the same transactions. The semaphore will let one execute first and the other waits, then allowing the second after the first agent is done. 
 
-And shared memory is implemented to allow communication amongst all the agents (processes). When a reservation is made or a cancellation, the status is updated for the rest of the agents through shared memory. 
+Shared memory is implemented to allow communication amongst all the agents (processes). When a reservation is made or a cancellation, the status is updated for the rest of the agents through shared memory. 
 
 ## Input
 The program inputs one text file which lists the number of flights, the seats, and number of agents followed by their transactions with deadlines. 
